@@ -1,0 +1,46 @@
+#include <stdio.h>
+/**
+ * main - print double 2digit numbs
+ *
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+
+	int a;
+	int b;
+	int c;
+
+	a = 48;
+	b = 48;
+	c = 48;
+
+	while (b < 58)
+	{
+		a = 48;
+		while (a < 58)
+		{
+			c = 48;
+			while (c < 58)
+			{
+				if (b != a && b != c && a != c && b < a && a < c)
+				{
+					putchar(b);
+					putchar(a);
+					putchar(c);
+					if (a == 57 && b == 56 && c == 57)
+					{
+						break;
+					}
+					putchar(',');
+					putchar(' ');
+				}
+				c++;
+			}
+			a++;
+		}
+		b++;
+	}
+	putchar('\n');
+	return (0);
+}
