@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * funx prints alphabets in lowercase
+ * print_alphabet - funx prints alphabets in lowercase
  *
  * Return: Always 0 (success)
  */
