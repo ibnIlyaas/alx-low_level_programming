@@ -9,7 +9,7 @@ int main(void)
 	int sum;
 
 	sum = 0;
-	for (n = 0; n < 1023; n++)
+	for (n = 0; n < 1024; n++)
 	{
 		if ((n % 3 == 0) || (n % 5 == 0))
 		{
