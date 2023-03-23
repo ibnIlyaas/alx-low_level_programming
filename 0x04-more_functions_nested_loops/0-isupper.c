@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 /**
  * main - checks for uppercase
  * @c: parameter
