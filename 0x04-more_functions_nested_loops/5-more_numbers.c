@@ -3,6 +3,7 @@
 /**
  * more_numbers - prints 0 to 14 10x
  */
+
 void more_numbers(void)
 {
 	int a, b;
@@ -17,4 +18,4 @@ void more_numbers(void)
 		}
 		_putchar('\n');
 	}
-}	
+}
