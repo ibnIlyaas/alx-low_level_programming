@@ -4,7 +4,6 @@
  * print_line - prints a line based of input
  * @n: input parameter
  */
-
 void print_line(int n)
 {
 	int i;
