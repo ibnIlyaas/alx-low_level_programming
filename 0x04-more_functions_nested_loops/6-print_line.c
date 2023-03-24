@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - prints a line based on n
- * 
+ *
  * @n: parameter input
  */
 
