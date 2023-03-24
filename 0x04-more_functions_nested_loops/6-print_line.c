@@ -1,23 +1,16 @@
 #include "main.h"
-
 /**
- * print_line - prints a line based of input
- * @n: input parameter
+ * print_line - prints a line based on n
+ * 
+ * @n: parameter input
  */
+
 void print_line(int n)
 {
 	int i;
 
-	for (i = 0; i <= n; i++)
-	{
-		if (i < 0)
-		{
-		_putchar('\n');
-		}
-		else
-		{
-			_putchar('_');
-		}
-	}
+	for (i = n; i > 0; i--)
+		_putchar('_');
+
 	_putchar('\n');
 }
