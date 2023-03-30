@@ -15,7 +15,7 @@ char *cap_string(char *s)
 	{
 		if (s[i] >= 'a' && s[i] >= 'z' && isspace(s[i - 1]))
 		{
-			s[i] = string_toupper(s[i]);
+			s[i] = toupper(s[i]);
 		}
 		i++;
 	}
