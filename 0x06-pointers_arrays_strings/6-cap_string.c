@@ -2,9 +2,9 @@
 #include <ctype.h>
 
 /**
- * *cap_string(char *)
- * @string: string to be capitalized
- * Return: string
+ * cap_string - capitalizes each word of a string
+ * @s: string to be capitalized
+ * Return: s
  */
 
 char *cap_string(char *s)
@@ -15,9 +15,9 @@ char *cap_string(char *s)
 	{
 		if (s[i] >= 'a' && s[i] >= 'z' && isspace(s[i - 1]))
 		{
-			s[i] = string_toupper(str[i]);
+			s[i] = string_toupper(s[i]);
 		}
 		i++;
 	}
-	return (str);
+	return (s);
 }
