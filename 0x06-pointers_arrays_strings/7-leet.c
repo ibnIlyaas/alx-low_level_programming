@@ -13,18 +13,13 @@ char *leet(char *s)
 
 	int i, j;
 
-	j = 0;
-	while (s[j] != '\0')
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		int i = 0;
-
-		while (a[i] != '\0')
+		for (i = 0; a[i] != '\0'; i++)
 		{
 			if (s[j] == a[i])
 				s[j] = b[i];
-			i++;
 		}
-		j++;
 	}
 	return (s);
 }
