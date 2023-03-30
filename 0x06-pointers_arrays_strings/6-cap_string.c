@@ -17,8 +17,8 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		if (s[i] >= 'a' && s[i] <= 'z' && isspace(s[i - 1])
-				|| s[i - 1] == '.')
+		if ((s[i] >= 'a' && s[i] <= 'z') && isspace(s[i - 1])
+				|| (s[i - 1] == '.'))
 		{
 			s[i] = s[i] - 'a' + 'A';
 		}
