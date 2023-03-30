@@ -8,7 +8,7 @@
 
 char *string_toupper(char *str)
 {
-	int index; /*indicates location of string elements*/
+	int index = 0; /*indicates location of string elements*/
 
 	while (str[index] != '\0')
 	{
