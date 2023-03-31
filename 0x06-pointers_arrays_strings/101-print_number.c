@@ -19,7 +19,7 @@ void print_number(int n)
 			p = n * -1;
 			_putchar('-');
 		}
-		while (start <= positive)
+		while (start <= p)
 			start = start * 10;
 		t = start / 10;
 
@@ -27,8 +27,8 @@ void print_number(int n)
 		{
 			d = p / t;
 			_putchar(d + '0');
-			p = (p - (t * d);
-			t = t / 10;
+			p = (p - (t * d));
+			t /= 10;
 		}
 	}
 }
