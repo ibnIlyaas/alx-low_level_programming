@@ -11,6 +11,7 @@
 char *_strchr(char *s, char c)
 {
 	char *ptr;
+
 	ptr = strchr(s, c);
 	return (ptr);
 }
