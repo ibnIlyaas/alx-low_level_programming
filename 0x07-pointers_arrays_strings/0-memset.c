@@ -5,7 +5,7 @@
  * _memset - fills memory loc with a constant byte
  * @s: string from which byte are to be replaced
  * @b: byte to be replaced with
- * @n; number of bytes of s to be replaced
+ * @n: number of bytes of s to be replaced
  * Return: s
  */
 
