@@ -15,12 +15,12 @@ int main(int argc, char *argv[])
 	int product = 1;
 
 	(void)argc;
-	if (i < argc - 1)
-		printf("Error\n");
-	return (1);
-
 	for (i = 1; i < argc; i++)
 	{
+		if(i < 2)
+			printf("Error\n");
+		return (0);
+
 		product *= atoi(argv[i]);
 	}
 	printf("%d\n", product);
