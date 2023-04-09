@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * main - prints products of two numbers
@@ -10,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i = 0;
 	int product = 1;
 
 	(void)argc;
@@ -22,6 +23,6 @@ int main(int argc, char *argv[])
 	{
 		product *= atoi(argv[i]);
 	}
-	printf("%d\n", product;
+	printf("%d\n", product);
 	return (0);
 }
