@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
+#include <string.h>
 
 /**
  * main - prints name of program followed by new line
@@ -8,11 +10,9 @@
  * Return: 0 always success
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
-	int len;
-
-	len = sizeof(argv)/sizeof(argv[0]);
-	_putchar(argv[len-1]);
+	(void)argc;
+	printf("%s\n",argv[argc - 1]);
 	return (0);
 }
