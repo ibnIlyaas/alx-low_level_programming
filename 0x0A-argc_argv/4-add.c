@@ -2,6 +2,26 @@
 #include "main.h"
 #include <stdlib.h>
 #include <ctype.h>
+#include <stdbool.h>
+
+/**
+ * isdig - checks if a char is a num
+ * @str: string param
+ * Return: 1 if true and 0 if false
+ */
+
+bool isdig(char *str)
+{
+	int ind;
+
+	for (ind = 0; str[ind]; ind++)
+	{
+		if (isdigit(str[ind]))
+			return (1);
+	}
+	return (0);
+}
+
 
 /**
  * main - prints sum of two positive numbers
@@ -12,28 +32,25 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
+	int i = 1;
 	int sum = 0;
 
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			if (isdigit(atoi(argv[i])) != 0)
-			{
-				sum += atoi(argv[i]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		printf("%d\n", sum);
-	}
-	else
+	if (argc == 1)
 	{
 		printf("0\n");
 	}
+
+	while (argc > i)
+	{
+		if (isdig(argv[i]))
+			sum += atoi(argv[i]);
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		i++;
+	}
+	printf("%d\n", sum);
 return (0);
 }
