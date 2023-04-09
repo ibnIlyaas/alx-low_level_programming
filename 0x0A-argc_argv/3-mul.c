@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int product = 1;
 
 	(void)argc;
-	if (i < 3)
+	if (i < argc - 1)
 		printf("Error\n");
 	return (1);
 
