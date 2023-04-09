@@ -16,10 +16,10 @@ bool isdig(char *str)
 
 	for (ind = 0; str[ind]; ind++)
 	{
-		if (isdigit(str[ind]))
-			return (1);
+		if (!(isdigit(str[ind])))
+			return (0);
 	}
-	return (0);
+	return (1);
 }
 
 
@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("0\n");
+		return (0);
 	}
 
 	while (argc > i)
