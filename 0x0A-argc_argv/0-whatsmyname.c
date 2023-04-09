@@ -10,9 +10,9 @@
  * Return: 0 always success
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	(void)argc;
-	printf("%s\n",argv[argc - 1]);
+	printf("%s\n", argv[argc - 1]);
 	return (0);
 }
