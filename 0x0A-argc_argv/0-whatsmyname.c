@@ -13,6 +13,6 @@ int main(int argc, char *argv[])
 	int len;
 
 	len = sizeof(argv)/sizeof(argv[0]);
-	printf("%s\n", argv[len-1]);
+	_putchar(argv[len-1]);
 	return (0);
 }
