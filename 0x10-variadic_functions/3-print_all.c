@@ -1,6 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stddef.h>
+#include "variadic_functions.h"
 
 /**
  * print_all - prints anything
@@ -17,7 +18,7 @@ void print_all(const char * const format, ...)
 	separator = "";
 	if (format)
 	{
-		while (format[i]);
+		while (format[i])
 		{
 			switch (format[i])
 			{
