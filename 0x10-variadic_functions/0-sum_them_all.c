@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdarg.h>
 
 /**
  * sum_them_all - returns sum of all its params
@@ -7,7 +8,7 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	size_t i;
+	unsigned int i;
 	int sum;
 	va_list p;
 
