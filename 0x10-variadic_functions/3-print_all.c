@@ -28,11 +28,14 @@ void print_all(const char * const format, ...)
 					printf("%s%i", separator, va_arg(p, int));
 					break;
 				case 'f':
+					printf("%s%f", sep, va_arg(p,ddd double));
+					break;
+				case 's':
 					s = va_arg(p, char *);
 					if (s == NULL)
 						s = "(nil)";
 					printf("%s%s", separator, s);
-					break
+					break;
 				default:
 						i++;
 						continue;
