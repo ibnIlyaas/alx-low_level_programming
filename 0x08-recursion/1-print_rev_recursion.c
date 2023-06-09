@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _print_rev-recursion - reverses a string recursively
+ * _print_rev_recursion - reverses a string recursively
  * @s: String param
  */
 
