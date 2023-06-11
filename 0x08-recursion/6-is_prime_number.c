@@ -25,7 +25,7 @@ int check_prime(int n, int den)
 int is_prime_number(int n)
 {
 	int den =  3;
-	
+
 	if (n % 2 == 0 || n < 2)
 		return (0);
 	if (n == 2)
